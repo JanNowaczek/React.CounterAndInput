@@ -1,17 +1,12 @@
 import React from 'react';
 
 class Counter extends React.Component{
-    constructor(){
-        super()
-
-        this.state = {
-            number: 10,
+    state = {
+        number: 10,
         }
 
-        this.inc = this.inc.bind(this)
-    }
-
     inc = () => this.setState({ number: this.state.number + 1 })
+    dec = () => this.setState({ number: this.state.number - 1 })
 
     render(){
         return(
@@ -24,6 +19,11 @@ class Counter extends React.Component{
                     onClick={this.inc}
                 >
                     +
+                </button>
+                <button
+                    onClick={this.dec}
+                >
+                    -    
                 </button>
             </div>
         )
