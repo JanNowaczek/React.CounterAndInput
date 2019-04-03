@@ -18,8 +18,35 @@ class Lifecycle extends React.Component {
 
     componentDidMount(){
         console.log('componentDidMount')
+        console.log('------ ------ -----')
+    }
+    //wycofany
+    componentWillReciveProps(nextProps){
+        console.log('componentWillReciveProps')
     }
 
+    shouldComponentUpdate(nextProps, nextState){
+        console.log('shouldComponentUpdate')
+
+        console.log('Current props', this.props)
+        console.log('Next props', nextProps)
+        console.log('Current state', this.state)
+        console.log('Next state', nextState)
+    }
+
+    //wycofany
+    componentWillUpdate(){
+        console.log('componentWillUpdate')
+    }
+
+    componentDidUpdate(){
+        console.log('componentDidUpdate')
+    }
+
+    componentWillUnmount(){
+        console.log(' componentWillUnmount')
+    }
+    
     render(){
         console.log('render')
 
