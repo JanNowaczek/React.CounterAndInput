@@ -32,6 +32,8 @@ class Lifecycle extends React.Component {
         console.log('Next props', nextProps)
         console.log('Current state', this.state)
         console.log('Next state', nextState)
+
+        return true
     }
 
     //wycofany

@@ -11,6 +11,9 @@ const App = (props) =>
       <Route path={'/lifecycle'} component={Lifecycle} />
       <ul>
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
         <Link to="/lifecycle">Lifecycle</Link>
         </li>
       </ul>
