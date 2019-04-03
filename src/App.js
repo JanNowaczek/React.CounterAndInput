@@ -4,6 +4,7 @@ import Counter from './Counter'
 
 const App = (props) =>
   <div>
+    <Counter number={5}/>
     <Counter />
   </div>
 

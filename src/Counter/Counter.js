@@ -2,7 +2,7 @@ import React from 'react';
 
 class Counter extends React.Component{
     state = {
-        number: 10,
+        number: this.props.number,
         }
 
     inc = () => this.setState({ number: this.state.number + 1 })
@@ -28,6 +28,10 @@ class Counter extends React.Component{
             </div>
         )
     }
-}        
+}  
+
+Counter.defaultProps = {
+    number: 0,
+}
 
 export default Counter
